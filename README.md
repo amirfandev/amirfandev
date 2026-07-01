@@ -3,7 +3,7 @@
 Engineer with 13+ years shipping production software across mobile, full-stack, and AI. I've built iOS apps with millions of downloads (and a Macworld Best of Show), delivered full-stack platforms in regulated domains, and these days I focus on AI agents and LLM systems that hold up in production.
 
 - 🤖 Now: agentic workflows, RAG & memory, tool integration, and AI reliability
-- 📱 Mobile: senior iOS — Swift & Objective-C, 8M+ downloads, award-winning apps
+- 📱 Mobile: senior iOS, Swift & Objective-C, 8M+ downloads, award-winning apps
 - 🌐 Full-stack: Python, TypeScript / React, APIs, and healthcare / regulated systems
 - 🧪 Across all of it: evaluation, testing, and guardrails — measuring quality, not hoping for it
 - 📌 My pinned repos are the best place to see how I actually work
