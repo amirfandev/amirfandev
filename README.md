@@ -5,7 +5,7 @@ Engineer with 13+ years shipping production software across mobile, full-stack, 
 - 🤖 Now: agentic workflows, RAG & memory, tool integration, and AI reliability
 - 📱 Mobile: senior iOS, Swift & Objective-C, 8M+ downloads, award-winning apps
 - 🌐 Full-stack: Python, TypeScript / React, APIs, and healthcare / regulated systems
-- 🧪 Across all of it: evaluation, testing, and guardrails — measuring quality, not hoping for it
+- 🧪 Across all of it: evaluation, testing, and guardrails, measuring quality, not hoping for it
 - 📌 My pinned repos are the best place to see how I actually work
 
 [![my skills](https://skillicons.dev/icons?i=swift,py,ts,react,vue,php,laravel,fastapi,postgres,mysql,redis,docker,aws,azure,git&perline=8)](https://skillicons.dev)
