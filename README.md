@@ -1,34 +1,45 @@
-I work on the part of applied AI that decides whether a system can be trusted in production.
-Structured output validation, golden-task evals, failure taxonomies, and the guardrails that
-turn "the agent broke" into a named, testable class of bug.
+**Hi, I'm Irfan.** I build reliability tooling for LLM systems: schema gates that refuse bad
+output, failure taxonomies that give bugs names, eval harnesses whose numbers you can recompute
+yourself. By day that means agent pipelines that turn requirements into reviewed, tested
+changes, with validation gates between every stage. The open-source work is the same discipline
+with all the evidence published.
 
-### What I build
+## Shipped
 
-Agent pipelines that turn requirements into reviewed, tested changes. Planner, implementer and
-reviewer stages with structured outputs and validation gates between them, repo operations and
-test execution wired into the loop, and evaluation runs over golden tasks so drift shows up
-before a release does.
+Everything in this section obeys one rule: it runs, and every number it claims can be
+recomputed from evidence committed in the repo. A claim that cannot be recomputed is marketing.
+The rule keeps the list short, and short is fine.
 
-In the open I work on the layer underneath: evaluation harnesses, validation gates, failure
-taxonomies, and policy enforcement for tool calls. Reliability infrastructure for systems that
-are not allowed to be wrong, aimed at regulated domains and Apple platforms, where a plausible
-wrong answer costs more than a crash.
+**[load-board-matcher](https://github.com/amirfandev/load-board-matcher)**
+An LLM extraction pipeline behind a pydantic schema gate. Output that fails validation is
+neither accepted nor fatal: the failure is classified into a named taxonomy and the model
+retries with its errors in hand. 186 tests, CI on Python 3.11 and 3.12, MIT. The eval harness
+runs an 8-case golden set with the raw model responses committed in the repo, so every
+published figure can be recomputed from the data that produced it.
 
-What I publish ships with something you can run, and every number with the evidence it came
-from.
+## On the bench
 
-### Before this
+Three problems, same territory: catching context compaction that silently drops a safety
+constraint or task invariant, putting a deterministic policy gate in front of agent tool calls,
+and bringing this eval discipline to on-device models on Apple platforms. Nothing here gets a
+name, a link, or a date until it ships and its claims hold. When one clears the bar, it moves
+up. Until then it is a problem, not a promise.
 
-**Regulated healthcare, four years, Abu Dhabi.** Tech lead on an EMR platform: appointment
-workflows, HL7, e-prescriptions, pharmacy integrations, in-app payments. Implemented the
-ADHICS, HIPAA, ISO 27001 and GDPR workflows and ran the internal audits.
+## How I build
 
-**Consumer iOS at scale.** A real-time 60fps camera app that passed 8 million downloads, a
-video editing app that took Best of Show at Macworld, and the original Flashlight app at number
-one in App Store Utilities.
+- **Runnable over described.** If you can't clone it and run it, it's a claim, not a tool.
+- **Numbers carry their evidence.** An eval result without the raw data behind it is an
+  anecdote with a decimal point.
+- **Failures get names.** "Wrong" is not a category. "Unit confusion in numeric fields" is. A
+  named failure class with a test attached can be counted, fixed, and watched for regressions.
+- **One problem per repo.** Small tools compose. Platforms rot.
 
-Both of those turn out to be the same job as the current one. Decide what correct means, measure
-it, and fail loudly when it is not. The difference now is that a model hands you a plausible
-wrong answer instead of a crash, so nothing tells you to go looking.
+None of this is a new habit. Thirteen years of iOS and real-time media came first, including a
+60fps camera app that passed 8 million downloads and the original Flashlight app at number one
+in App Store Utilities. Then four years as tech lead on a healthcare EMR platform in Abu Dhabi,
+where the systems carried e-prescriptions and I ran the internal HIPAA and ADHICS audits. Hard
+gates stopped being a style preference somewhere in there.
 
-[LinkedIn](https://www.linkedin.com/in/am-irfan)
+If something breaks, or a number doesn't recompute, open an issue. That is the fastest way to
+reach me. And if you are hitting agent failure modes that don't have names yet, I want to hear
+about those too: [LinkedIn](https://www.linkedin.com/in/am-irfan).
