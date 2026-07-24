@@ -9,10 +9,13 @@ reviewer stages with structured outputs and validation gates between them, repo 
 test execution wired into the loop, and evaluation runs over golden tasks so drift shows up
 before a release does.
 
-Most of that work is proprietary and stays that way, which is true of nearly everything I have
-built in thirteen years. What I put here is written separately and on purpose: small enough to
-read in one sitting, with the reasoning recorded rather than assumed, and honest about what it
-does not do.
+Most of that is proprietary. What I build in the open is the layer underneath it: evaluation
+harnesses, validation gates, failure taxonomies, and policy enforcement for tool calls.
+Reliability infrastructure for systems that are not allowed to be wrong, aimed at regulated
+domains and Apple platforms, where a plausible wrong answer costs more than a crash.
+
+Everything here ships with something you can run, and every number with the evidence it came
+from.
 
 ### Before this
 
