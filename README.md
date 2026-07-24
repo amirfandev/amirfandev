@@ -1,19 +1,29 @@
-### Hi, I'm Irfan 👋
+I work on the part of applied AI that decides whether a system can be trusted in production.
+Structured output validation, golden-task evals, failure taxonomies, and the guardrails that
+turn "the agent broke" into a named, testable class of bug.
 
-Engineer with 13+ years shipping production software across mobile, full-stack, and AI. I've built iOS apps with millions of downloads (and a Macworld Best of Show), delivered full-stack platforms in regulated domains, and these days I focus on AI agents and LLM systems that hold up in production.
+### Building
 
-- 🤖 Now: agentic workflows, RAG & memory, tool integration, and AI reliability
-- 📱 Mobile: senior iOS, Swift & Objective-C, 8M+ downloads, award-winning apps
-- 🌐 Full-stack: Python, TypeScript / React, APIs, and healthcare / regulated systems
-- 🧪 Across all of it: evaluation, testing, and guardrails, measuring quality, not hoping for it
-- 📌 My pinned repos are the best place to see how I actually work
+**[load-board-matcher](https://github.com/amirfandev/load-board-matcher)** is an LLM extraction
+pipeline behind a schema gate. It classifies every failure into a named kind and retries with
+the errors, rather than crashing on bad output or accepting it. It ships with an eval harness
+over a golden set of eight calls, and every published number can be recomputed from the raw
+responses committed beside it.
 
-[![my skills](https://skillicons.dev/icons?i=swift,py,ts,react,vue,php,laravel,fastapi,postgres,mysql,redis,docker,aws,azure,git&perline=8)](https://skillicons.dev)
+### Before this
 
-**AI / LLM:** LangGraph · LangChain · pgvector · MCP · RAG / embeddings · evals (Ragas, Langfuse)
-**Mobile & full-stack:** iOS — Swift, Objective-C, UIKit, SwiftUI · React · Vue · Laravel · REST APIs · CI/CD
+Thirteen years building production software, most of it mobile.
 
-<!-- Optional: GitHub stats card. Delete this block for a cleaner, quieter profile. -->
-<!-- ![stats](https://github-readme-stats.vercel.app/api?username=amirfandev&show_icons=true&hide_title=true&hide_rank=true) -->
+**Regulated healthcare, four years, Abu Dhabi.** Tech lead on an EMR platform: appointment
+workflows, HL7, e-prescriptions, pharmacy integrations, in-app payments. Implemented the
+ADHICS, HIPAA, ISO 27001 and GDPR workflows and ran the internal audits.
 
-📫 [LinkedIn](https://www.linkedin.com/in/am-irfan)
+**Consumer iOS at scale.** A real-time 60fps camera app that passed 8 million downloads, a
+video editing app that took Best of Show at Macworld, and the original Flashlight app at number
+one in App Store Utilities.
+
+Both of those turn out to be the same job as the current one. Decide what correct means, measure
+it, and fail loudly when it is not. The difference now is that a model hands you a plausible
+wrong answer instead of a crash, so nothing tells you to go looking.
+
+am_irfan@outlook.com · [LinkedIn](https://www.linkedin.com/in/am-irfan)
