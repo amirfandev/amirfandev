@@ -4,14 +4,6 @@ yourself. By day that means agent pipelines that turn requirements into reviewed
 changes, with validation gates between every stage. The open-source work is the same discipline
 with all the evidence published.
 
-## On the bench
-
-Three problems, same territory: catching context compaction that silently drops a safety
-constraint or task invariant, putting a deterministic policy gate in front of agent tool calls,
-and bringing this eval discipline to on-device models on Apple platforms. Nothing here gets a
-name, a link, or a date until it ships and its claims hold. Until then it is a problem, not a
-promise.
-
 ## How I build
 
 - **Runnable over described.** If you can't clone it and run it, it's a claim, not a tool.
