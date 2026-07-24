@@ -2,17 +2,19 @@ I work on the part of applied AI that decides whether a system can be trusted in
 Structured output validation, golden-task evals, failure taxonomies, and the guardrails that
 turn "the agent broke" into a named, testable class of bug.
 
-### Building
+### What I build
 
-**[load-board-matcher](https://github.com/amirfandev/load-board-matcher)** is an LLM extraction
-pipeline behind a schema gate. It classifies every failure into a named kind and retries with
-the errors, rather than crashing on bad output or accepting it. It ships with an eval harness
-over a golden set of eight calls, and every published number can be recomputed from the raw
-responses committed beside it.
+Agent pipelines that turn requirements into reviewed, tested changes. Planner, implementer and
+reviewer stages with structured outputs and validation gates between them, repo operations and
+test execution wired into the loop, and evaluation runs over golden tasks so drift shows up
+before a release does.
+
+Most of that work is proprietary and stays that way, which is true of nearly everything I have
+built in thirteen years. What I put here is written separately and on purpose: small enough to
+read in one sitting, with the reasoning recorded rather than assumed, and honest about what it
+does not do.
 
 ### Before this
-
-Thirteen years building production software, most of it mobile.
 
 **Regulated healthcare, four years, Abu Dhabi.** Tech lead on an EMR platform: appointment
 workflows, HL7, e-prescriptions, pharmacy integrations, in-app payments. Implemented the
@@ -26,4 +28,4 @@ Both of those turn out to be the same job as the current one. Decide what correc
 it, and fail loudly when it is not. The difference now is that a model hands you a plausible
 wrong answer instead of a crash, so nothing tells you to go looking.
 
-am_irfan@outlook.com · [LinkedIn](https://www.linkedin.com/in/am-irfan)
+[LinkedIn](https://www.linkedin.com/in/am-irfan)
