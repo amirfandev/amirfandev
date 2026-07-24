@@ -4,26 +4,13 @@ yourself. By day that means agent pipelines that turn requirements into reviewed
 changes, with validation gates between every stage. The open-source work is the same discipline
 with all the evidence published.
 
-## Shipped
-
-Everything in this section obeys one rule: it runs, and every number it claims can be
-recomputed from evidence committed in the repo. A claim that cannot be recomputed is marketing.
-The rule keeps the list short, and short is fine.
-
-**[load-board-matcher](https://github.com/amirfandev/load-board-matcher)**
-An LLM extraction pipeline behind a pydantic schema gate. Output that fails validation is
-neither accepted nor fatal: the failure is classified into a named taxonomy and the model
-retries with its errors in hand. 186 tests, CI on Python 3.11 and 3.12, MIT. The eval harness
-runs an 8-case golden set with the raw model responses committed in the repo, so every
-published figure can be recomputed from the data that produced it.
-
 ## On the bench
 
 Three problems, same territory: catching context compaction that silently drops a safety
 constraint or task invariant, putting a deterministic policy gate in front of agent tool calls,
 and bringing this eval discipline to on-device models on Apple platforms. Nothing here gets a
-name, a link, or a date until it ships and its claims hold. When one clears the bar, it moves
-up. Until then it is a problem, not a promise.
+name, a link, or a date until it ships and its claims hold. Until then it is a problem, not a
+promise.
 
 ## How I build
 
